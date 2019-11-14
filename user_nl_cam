@@ -1,0 +1,19 @@
+&prescribed_dummy_nl
+ prescribed_dummy_cycle_yr              = 1850
+ prescribed_dummy_datapath              = '/path/to/directory'
+ prescribed_dummy_file         	        = 'forcing_filename.nc'
+ prescribed_dummy_name                  = 'DUMMY'
+ prescribed_dummy_type                  = 'CYCLICAL'
+/
+&rad_cnst_nl
+ rad_climate            = 'A:Q:H2O', 'N:O2:O2',
+         'N:CO2:CO2', 'N:ozone:O3', 'N:dummy:DUMMY',
+         'N:N2O:N2O', 'N:CH4:CH4',
+         'N:CFC11:CFC11', 'N:CFC12:CFC12',
+         'N:sulf:/home/pnuusc-00/sl_484/CESM.INPUT/atm/cam/physprops/sulfate_camrt_c080918.nc', 'N:dust1:/home/pnuusc-00/sl_484/CESM.INPUT/atm/cam/physprops/dust1_camrt_c080918.nc',
+         'N:dust2:/home/pnuusc-00/sl_484/CESM.INPUT/atm/cam/physprops/dust2_camrt_c080918.nc', 'N:dust3:/home/pnuusc-00/sl_484/CESM.INPUT/atm/cam/physprops/dust3_camrt_c080918.nc',
+         'N:dust4:/home/pnuusc-00/sl_484/CESM.INPUT/atm/cam/physprops/dust4_camrt_c080918.nc', 'N:bcar1:/home/pnuusc-00/sl_484/CESM.INPUT/atm/cam/physprops/bcpho_camrt_c080918.nc',
+         'N:bcar2:/home/pnuusc-00/sl_484/CESM.INPUT/atm/cam/physprops/bcphi_camrt_c080918.nc', 'N:ocar1:/home/pnuusc-00/sl_484/CESM.INPUT/atm/cam/physprops/ocpho_camrt_c080918.nc',
+         'N:ocar2:/home/pnuusc-00/sl_484/CESM.INPUT/atm/cam/physprops/ocphi_camrt_c080918.nc', 'N:SSLTA:/home/pnuusc-00/sl_484/CESM.INPUT/atm/cam/physprops/ssam_camrt_c080918.nc',
+         'N:SSLTC:/home/pnuusc-00/sl_484/CESM.INPUT/atm/cam/physprops/sscm_camrt_c080918.nc'
+/
